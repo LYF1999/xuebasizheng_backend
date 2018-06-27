@@ -79,7 +79,7 @@ DATABASES = {
         'NAME': 'xbsz',
         'USER': 'xbsz',
         'PASSWORD': 'xuebasizheng',
-        'HOST': '127.0.0.1',
+        'HOST': '118.25.16.222',
         'PORT': '5432'
     }
 }
