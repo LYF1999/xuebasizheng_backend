@@ -1,0 +1,12 @@
+PostgreSQL:
+  image: sameersbn/postgresql:9.6-2
+  ports:
+    - "5432:5432"
+  environment:
+    - DEBUG=true
+
+    - DB_NAME=xbsz
+    - DB_USER=xbsz
+    - DB_PASS=xuebasizheng
+#  volumes:
+#    - /srv/docker/postgresql:/var/lib/postgresql
