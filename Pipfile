@@ -6,6 +6,12 @@ name = "pypi"
 [packages]
 django = "*"
 "psycopg2" = "*"
+djangorestframework = "*"
+django-filter = "*"
+djangorestframework-jwt = "*"
+django-rest-swagger = "*"
+django-redis = "*"
+qiniu = "*"
 
 [dev-packages]
 
