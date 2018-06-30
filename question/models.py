@@ -4,7 +4,7 @@ from course.models import Course
 
 class Question(models.Model):
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
-    version = models.CharField(max_length=255)
+    version = models.CharField(max_length=255, unique=True)
     url = models.URLField()
 
     def __str__(self):
