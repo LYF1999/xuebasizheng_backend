@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  pg:
+    image: sameersbn/postgresql:9.6-2
+    ports:
+      - '5432:5432'
+    environment:
+      - DEBUG=true
+      - DB_NAME=xbsz
+      - DB_USER=xbsz
+      - DB_PASS=xuebasizheng
+    volumes:
+      - ./pg_data:/var/lib/postgresql
+
+  redis:
+    image: 'bitnami/redis:latest'
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    ports:
+      - '6379:6379'
+    volumes:
+      - ./redis-data:/bitnami

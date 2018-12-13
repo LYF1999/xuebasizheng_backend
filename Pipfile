@@ -4,16 +4,18 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "*"
-"psycopg2" = "*"
+django = ">=2.0.8"
 djangorestframework = "*"
 django-filter = "*"
 djangorestframework-jwt = "*"
 django-rest-swagger = "*"
 django-redis = "*"
 qiniu = "*"
+psycopg2 = "*"
 
 [dev-packages]
+urllib3 = ">=1.23"
+requests = ">=2.20.0"
 
 [requires]
 python_version = "3.6"
