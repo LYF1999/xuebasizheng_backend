@@ -6,6 +6,6 @@ from question.serializers import QuestionSerializer
 class CourseSerializer(serializers.ModelSerializer):
     class Meta:
         model = Course
-        fields = ['name', 'questions']
+        fields = ['name', 'question_file', 'id']
 
-    questions = QuestionSerializer(source='get_current_questions', read_only=True)
+    question_file = QuestionSerializer(source='get_current_questions', read_only=True)

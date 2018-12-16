@@ -16,4 +16,4 @@ class Course(models.Model):
 
     def get_current_questions(self):
         version = self.get_current_version()
-        return self.question_set.get(version=version)
+        return self.question_set.get(version=version) if version else None

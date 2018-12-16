@@ -6,5 +6,5 @@ from question.views import QuestionViewSet
 router = routers.DefaultRouter()
 
 router.register(r'user', UserViewSet)
-router.register(r'course', CourseViewSet)
-router.register(r'question', QuestionViewSet)
+router.register(r'courses', CourseViewSet)
+router.register(r'questions', QuestionViewSet)
